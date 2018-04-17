@@ -16,7 +16,7 @@
 				},
 				"background": {},
 				"text": {
-					"headline": "Elena de platz en platz",
+					"headline": "Elena",
 					"text": "<span><p>Elena a 28 ans. Elle est rom. La jeune mère arrive en Île-de-France en 2010. Depuis, elle trimballe ses valises au gré des expulsions, d’hôtel en hôtel, de bidonville en bidonville. On les appelle Platz dans la communauté. Elle en a changé six fois depuis qu’elle a franchi la frontière. Une vie sans cesse déplacée, sans emploi fixe ni accès à l’école.</p><p></p><p><em>Cliquez sur les flèches de droite pour suivre le parcours d’Elena, de platz en platz.</em></p><div><br></div></span>"
 				},
 				"date": "",
@@ -231,8 +231,7 @@
 					"credit": ""
 				},
 				"location": {
-					"line": true,
-					"use_custom_marker": false
+					"line": true
 				},
 				"background": {},
 				"text": {
