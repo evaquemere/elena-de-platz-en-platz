@@ -1,37 +1,22 @@
-## Welcome to GitHub Pages
+<!-- The StoryMap container can go anywhere on the page. Be sure to
+    specify a width and height.  The width can be absolute (in pixels) or
+    relative (in percentage), but the height must be an absolute value.
+    Of course, you can specify width and height with CSS instead -->
+<div id="mapdiv" style="width: 100%; height: 600px;"></div>
 
-You can use the [editor on GitHub](https://github.com/evaquemere/elena-de-platz-en-platz/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+<!-- Your script tags should be placed before the closing body tag. -->
+<link rel="stylesheet" href="https://cdn.knightlab.com/libs/storymapjs/latest/css/storymap.css">
+<script type="text/javascript" src="https://cdn.knightlab.com/libs/storymapjs/latest/js/storymap-min.js"></script>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<script>
+// storymap_data can be an URL or a Javascript object
+var storymap_data = '//media.knightlab.com/StoryMapJS/demo/demo.json';
 
-### Markdown
+// certain settings must be passed within a separate options object
+var storymap_options = {};
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/evaquemere/elena-de-platz-en-platz/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+var storymap = new VCO.StoryMap('mapdiv', storymap_data, storymap_options);
+window.onresize = function(event) {
+    storymap.updateDisplay(); // this isn't automatic
+}
+</script>
